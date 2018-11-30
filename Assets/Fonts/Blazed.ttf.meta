@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6dc1e9f517bb28c419d1e9f07cfc8b2d
+timeCreated: 1543601552
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blazed
+  fontNames:
+  - Blazed
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
