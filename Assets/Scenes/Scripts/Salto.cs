@@ -15,10 +15,19 @@ public class Salto : MonoBehaviour {
 		{
 			animator.SetBool("saltando", true);
 		}
+		if (Input.GetKeyDown(KeyCode.C))
+		{
+			animator.SetBool("rodando", true);
+		}
 	}
 	public void finalizarAnimacion()
 	{
 		animator.SetBool("saltando", false);
+
+	}
+	public void finalizarRodado()
+	{
+		animator.SetBool("rodando", false);
 
 	}
 }
