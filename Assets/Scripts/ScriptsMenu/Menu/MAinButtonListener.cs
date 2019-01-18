@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MAinButtonListener : MonoBehaviour {
 
@@ -14,6 +15,10 @@ public class MAinButtonListener : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		btnPlay.onClick.AddListener(play);
+	}
+	void play()
+	{
+		Application.LoadLevel("Play");
 	}
 }

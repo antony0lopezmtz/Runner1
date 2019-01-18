@@ -5,18 +5,55 @@ using UnityEngine;
 public class ControlJugador : ControladorBasico {
 
     Animator animator;
-	// Use this for initialization
+	public GameObject derecha;
+	public GameObject izquierda;
+	public GameObject medio;
+	Vector3 myVector;
+	public float speed;
+
+	
+
 	void Start () {
         base.Start();
         animator = GetComponent<Animator>();
+		myVector = medio.transform.position;
     }
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKeyDown(KeyCode.RightArrow) & (gameObject.transform.position.x == 108.45f))
+		{
+			myVector = new Vector3(derecha.transform.position.x, 14.28f, -64.2f);
+			
+			Debug.Log ("MaD");
+		}
+
+		if (Input.GetKeyDown(KeyCode.LeftArrow) & (gameObject.transform.position.x == 108.45f))
+		{
+			myVector = new Vector3(izquierda.transform.position.x, 14.28f, -64.2f);
+			Debug.Log("MaI");
+		}
+
+		if (Input.GetKeyDown(KeyCode.LeftArrow) & (gameObject.transform.position.x == 116.97f))
+		{
+			myVector = new Vector3(medio.transform.position.x, 14.28f, -64.2f);
+			Debug.Log("DaM");
+		}
+
+		if (Input.GetKeyDown(KeyCode.RightArrow) & (gameObject.transform.position.x == 98.69f))
+		{
+			myVector = new Vector3(medio.transform.position.x, 14.28f, -64.2f);
+			Debug.Log("IaM");
+		}
+
+		transform.position = Vector3.MoveTowards(transform.position, myVector, speed);
+
 		if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool(Utils.ANIMATION_SALTANDO,true);
         }
+
         if (Input.GetKeyDown(KeyCode.C))
         {
             animator.SetBool(Utils.ANIMATION_AGACHADO, true);
@@ -28,7 +65,7 @@ public class ControlJugador : ControladorBasico {
         animator.SetBool(Utils.ANIMATION_SALTANDO, false);
     }
 
-    void finalizarAgachado()
+    void finalizarRodado	()
     {
         animator.SetBool(Utils.ANIMATION_AGACHADO, false);
     }

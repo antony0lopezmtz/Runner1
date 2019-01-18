@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a55ff2f6ac368d6459dd3950e742c23b
+timeCreated: 1547834614
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Jurassic Park
+  fontNames:
+  - Jurassic Park
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
