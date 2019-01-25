@@ -24,11 +24,11 @@ public class MapController : ControladorBasico{
 	}
 	public override void juegoEnPausa()
 	{
-		throw new System.NotImplementedException();
+		
 	}
 	public override void juegoRestaurado()
 	{
-		throw new System.NotImplementedException();
+		
 	}
 
 }

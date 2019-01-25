@@ -58,7 +58,11 @@ public class ControlJugador : ControladorBasico {
         {
             animator.SetBool(Utils.ANIMATION_AGACHADO, true);
         }
- 	}
+		if (Input.GetKeyDown(KeyCode.D))
+		{
+			animator.SetBool(Utils.ANIMATION_DABADO, true);
+		}
+	}
 
     void finalizarAnimacion()
     {
@@ -69,8 +73,13 @@ public class ControlJugador : ControladorBasico {
     {
         animator.SetBool(Utils.ANIMATION_AGACHADO, false);
     }
+	void finalizarDabado()
+	{
+		animator.SetBool(Utils.ANIMATION_DABADO, false);
+	}
 
-    public override void juegoEnPausa()
+
+	public override void juegoEnPausa()
     {
         Time.timeScale = 0f;
     }
