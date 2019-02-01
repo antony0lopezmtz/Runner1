@@ -28,7 +28,8 @@ public class GameController : MonoBehaviour {
 
 	void Start () {
         estado = EstadoJuego.Jugando;
-    }
+		
+	}
 
     void Update () {
 		if (Input.GetKeyDown(KeyCode.P))
