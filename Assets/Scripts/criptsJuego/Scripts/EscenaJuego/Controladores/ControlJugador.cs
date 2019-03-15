@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControlJugador : ControladorBasico {
 
     Animator animator;
+
 	public GameObject derecha;
 	public GameObject izquierda;
 	public GameObject medio;
@@ -13,14 +14,24 @@ public class ControlJugador : ControladorBasico {
 
 	
 
+
+
 	void Start () {
+
         base.Start();
+
         animator = GetComponent<Animator>();
 		myVector = medio.transform.position;
-    }
+		//Set the speed of the GameObject
+		speed = 10.0f;
+		
+
+	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		
 
 		if (Input.GetKeyDown(KeyCode.RightArrow) & (gameObject.transform.position.x == 108.45f))
 		{
@@ -88,4 +99,6 @@ public class ControlJugador : ControladorBasico {
     {
         Time.timeScale = 1f;
     }
+
+
 }

@@ -31,4 +31,15 @@ public class ColisionPlataforma : MonoBehaviour
 		}
 		
 	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.gameObject.CompareTag("Player"))
+		{
+			Destroy(gameObject);
+			Debug.Log("Kaboom");
+
+		}
+
+	}
 }

@@ -37,21 +37,21 @@ public class MapController : ControladorBasico
 		var plataforma3 = GameObject.Find("saltoDerecha");
 		mapa.Add(plataforma3);
 		var plataforma4 = GameObject.Find("saltoIzquierda");
-		mapa.Add(plataforma1);
+		mapa.Add(plataforma4);
 		var plataforma5 = GameObject.Find("paredIzquierda");
-		mapa.Add(plataforma2);
+		mapa.Add(plataforma5);
 		var plataforma6 = GameObject.Find("paredDerecha");
-		mapa.Add(plataforma3);
-		var plataforma7 = GameObject.Find("agachardeDerecha");
-		mapa.Add(plataforma1);
+		mapa.Add(plataforma6);
+		var plataforma7 = GameObject.Find("agacharseDerecha");
+		mapa.Add(plataforma7);
 		var plataforma8 = GameObject.Find("agacharseIzquierda");
-		mapa.Add(plataforma2);
+		mapa.Add(plataforma8);
 		var plataforma9 = GameObject.Find("agacharseMedio");
-		mapa.Add(plataforma3);
+		mapa.Add(plataforma9);
 		var plataforma10 = GameObject.Find("pasilloMedio");
-		mapa.Add(plataforma2);
+		mapa.Add(plataforma10);
 		var plataforma11 = GameObject.Find("pasilloMedioSalto");
-		mapa.Add(plataforma3);
+		mapa.Add(plataforma11);
 	}
 
 	// Update is called once per frame
