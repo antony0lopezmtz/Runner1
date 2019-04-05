@@ -12,10 +12,10 @@ public class GameController : MonoBehaviour {
     public List<ControladorBasico> controladores;
     public static GameController controlador;
 
-    /*
+	/*
      *  https://docs.unity3d.com/Manual/ExecutionOrder.html
      */
-    void Awake()
+	void Awake()
     {
 		if (controlador == null)
 			controlador = this;
